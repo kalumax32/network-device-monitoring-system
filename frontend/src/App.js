@@ -4,7 +4,12 @@ import Dashboard from "./Dashboard";
 
 function App() {
   const [token, setToken] = useState(null);
-  return token ? <Dashboard token={token} /> : <Login setToken={setToken} />;
+  
+  return (
+    <div className="min-h-screen bg-slate-900 ...">
+      {token ? <Dashboard token={token} /> : <Login setToken={setToken} />}
+    </div>
+  );
 }
 
 export default App;

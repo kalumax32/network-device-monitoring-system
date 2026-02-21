@@ -1,3 +1,7 @@
 flask
 flask-cors
 flask-jwt-extended
+psutil
+pysnmp
+getmac
+mac-vendor-lookup
